@@ -56,9 +56,7 @@ class Login extends React.Component{
     //  })
         
     }
-    // HandleSignUp=()=>{
-    //     this.history.push('/registration')
-    // }
+   
     
     
     render(){
