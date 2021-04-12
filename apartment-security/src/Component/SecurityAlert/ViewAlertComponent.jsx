@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AlertService from '../services/AlertService';
+import AlertService from '../../services/AlertService';
 
 class ViewAlertService extends Component {
     constructor(props) {

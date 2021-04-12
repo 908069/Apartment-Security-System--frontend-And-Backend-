@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const SECURITY_ALERT_API_BASE_URL = "http://localhost:8085/springfox/api/owner/alert";
+const SECURITY_ALERT_API_BASE_URL = "http://localhost:8082/springfox/api/owner/alert";
 
 class AlertService {
     getAlerts() {
