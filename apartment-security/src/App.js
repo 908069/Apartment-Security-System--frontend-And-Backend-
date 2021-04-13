@@ -21,12 +21,16 @@ import ViewAlertComponent from './Component/SecurityAlert/ViewAlertComponent';
 import CreateHelpComponent from './Component/DomestisHelp/CreateHelpComponent';
 import UpdateHelpComponent from './Component/DomestisHelp/UpdateHelpComponent';
 import ListHelpComponent from './Component/DomestisHelp/ListHelpComponent';
-import ViewHelpService from './Component/DomestisHelp/ViewHelpComponent';
+import ViewHelpComponent from './Component/DomestisHelp/ViewHelpComponent';
+import ListDeliveryComponent from './Component/Delivery/ListDeliveryComponent';
+import CreateDeliveryComponent from './Component/Delivery/CreateDeliveryComponent';
+import UpdateDeliveryComponent from './Component/Delivery/UpdateDeliveryComponent';
+import ViewDeliveryComponent from './Component/Delivery/ViewDeliveryComponent';
 function App() {
   return (  
     <div className="App">
       
-    {/*<HomeMenu/>
+    <HomeMenu/>
     
       <Switch>
         
@@ -35,19 +39,23 @@ function App() {
         <Route path='/login' component={Login}/>
         <Route path='/addflatdetails' component={PostFlatdetails}/>
         <Route path='/addGuardShift' component={PostGuardShift}/>
-    </Switch>*/}
+    </Switch>
        <Router>
         
         {/* <HeaderComponent/> */}
         <div className="container">
         
           <Switch>
-          
-          <Route path = "/" exact component= {ListHelpComponent}></Route>
+          {/* <Route path = "/" exact component= {ListDeliveryComponent}></Route>
+          <Route path = "/deliveries" component= {ListDeliveryComponent}></Route> 
+            <Route path = "/add-delivery" component= {CreateDeliveryComponent}></Route>  
+            <Route path = "/update-delivery/:deliveryId" component= {UpdateDeliveryComponent}></Route>
+            <Route path = "/view-delivery/:deliveryId" component= {ViewDeliveryComponent}></Route> */}
+           {/* <Route path = "/" exact component= {ListHelpComponent}></Route>
           <Route path = "/helps" component= {ListHelpComponent}></Route> 
             <Route path = "/add-help" component= {CreateHelpComponent}></Route>  
             <Route path = "/update-help/:helpId" component= {UpdateHelpComponent}></Route>
-            <Route path = "/view-help/:helpId" component= {ViewHelpService}></Route>
+            <Route path = "/view-help/:helpId" component= {ViewHelpComponent}></Route> */}
             {/* <Route path = "/" exact component= {ListAlertComponent}></Route>
             <Route path = "/alerts" component= {ListAlertComponent}></Route> 
             <Route path = "/add-alert" component= {CreateAlertComponent}></Route>  

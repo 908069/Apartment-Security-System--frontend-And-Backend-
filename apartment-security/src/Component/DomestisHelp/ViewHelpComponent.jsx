@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import HelpService from '../../services/HelpService';
-class ViewHelpService extends Component {
+class ViewHelpComponent extends Component {
     constructor(props) {
         super(props);
 
@@ -51,4 +51,4 @@ class ViewHelpService extends Component {
     }
 }
  
-export default ViewHelpService;
+export default ViewHelpComponent;

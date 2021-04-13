@@ -135,7 +135,7 @@ class CreateHelpComponent extends Component {
                                            
                                             value={this.state.personName}
 
-                                            onChange={this.changepersonNameHandler, this.formValChange} />
+                                            onChange={this.changepersonNameHandler} />
                                     </div>
                                     <div className="form-group">
                                         <label>Enter Help Date(yyyy-mm-dd)</label>
@@ -163,7 +163,7 @@ class CreateHelpComponent extends Component {
                                            
                                             value={this.state.arrivalTime}
 
-                                            onChange={this.changeArrivalTimeHandler, this.formValChange} />
+                                            onChange={this.changeArrivalTimeHandler} />
                                     </div>
                                     <div className="form-group">
                                         <label>Enter Departure Time</label>
@@ -171,7 +171,7 @@ class CreateHelpComponent extends Component {
                                            
                                             value={this.state.departureTime}
 
-                                            onChange={this.changeDepartureTimeHandler, this.formValChange} />
+                                            onChange={this.changeDepartureTimeHandler} />
                                     </div>
                                     <button className="btn btn-success" onClick={this.saveHelp}>Save</button>
                                     <button className="btn btn-danger" onClick={this.cancel.bind(this)} style={{ marginLeft: "10px" }}>Cancel</button>
