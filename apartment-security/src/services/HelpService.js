@@ -19,9 +19,9 @@ class HelpService {
         return axios.put(SECURITY_HELP_API_BASE_URL, domesticHelp);
     }
 
-    deleteHelp(helpId) {
+     deleteHelp(helpId) {
         return axios.delete(SECURITY_HELP_API_BASE_URL + '/' + helpId );
-    }
+     }
 }
 
 export default new HelpService();

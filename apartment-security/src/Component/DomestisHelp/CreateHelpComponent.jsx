@@ -26,7 +26,7 @@ const formValid = ({ isError, ...rest }) => {
             temp2++;
         }
     });
-    if (isValid1 && temp1 == 2 && isValid2 && temp2 == 2) {
+    if (isValid1 && isValid2 ) {
         return true;
     }
     return false;
@@ -59,7 +59,7 @@ class CreateHelpComponent extends Component {
     saveHelp = (e) => {
         e.preventDefault();
         if (formValid(this.state)) {
-            // console.log(this.state)
+            console.log(this.state)
             let domestichelp = {
                 id: null, arrivalTime : this.state.arrivalTime, departureTime: this.state.departureTime,
                 helpDate: this.state.helpDate,helpType:this.state.helpType,personName:this.state.personName
@@ -70,6 +70,7 @@ class CreateHelpComponent extends Component {
             })
         }
         else {
+            console.log(this.state)
             console.log("Form is invalid!");
         }
     }
@@ -157,7 +158,7 @@ class CreateHelpComponent extends Component {
                                         )}
                                     </div>
                                     <div className="form-group">
-                                        <label>Enter Arrival Timee</label>
+                                        <label>Enter Arrival Time</label>
                                         <input placeholder="Arrival Time" name="arrivalTime"
                                            
                                             value={this.state.arrivalTime}

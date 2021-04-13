@@ -5,14 +5,14 @@ class ViewHelpService extends Component {
         super(props);
 
         this.state = {
-            helpid: this.props.match.params.helpid,
+            helpId: this.props.match.params.helpId,
             domestichelp: {}
         }
 
     }
 
     componentDidMount(){
-        HelpService.getHelpById(this.state.helpid).then( res => {
+        HelpService.getHelpById(this.state.helpId).then( res => {
             this.setState({domestichelp: res.data});
         })
     }
@@ -29,7 +29,7 @@ class ViewHelpService extends Component {
                         </div>
                         <div className = "row">
                             <label>Help Type:</label>
-                            <div>{new Date(this.state.domestichelp.helpType).toDateString()}</div>
+                            <div>{this.state.domestichelp.helpType}</div>
                         </div>
                         <div className = "row">
                             <label>Help Date: </label>
@@ -37,7 +37,7 @@ class ViewHelpService extends Component {
                         </div>
                         <div className = "row">
                             <label>Arrival Time: </label>
-                            <div>{new Date(this.state.domestichelp.arrivalTime).toDateString()}</div>
+                            <div>{this.state.domestichelp.arrivalTime}</div>
                         </div>
                         <div className = "row">
                             <label>Departure Time: </label>

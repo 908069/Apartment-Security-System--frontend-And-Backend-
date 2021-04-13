@@ -1,5 +1,5 @@
 
-
+import './App.css';
 
 import HomeMenu from './Component/HomeMenu';
 import PostFlatdetails from './Registration/PostFlatdetails';
@@ -46,8 +46,8 @@ function App() {
           <Route path = "/" exact component= {ListHelpComponent}></Route>
           <Route path = "/helps" component= {ListHelpComponent}></Route> 
             <Route path = "/add-help" component= {CreateHelpComponent}></Route>  
-            <Route path = "/update-help/:id" component= {UpdateHelpComponent}></Route>
-            <Route path = "/view-help/:id" component= {ViewHelpService}></Route>
+            <Route path = "/update-help/:helpId" component= {UpdateHelpComponent}></Route>
+            <Route path = "/view-help/:helpId" component= {ViewHelpService}></Route>
             {/* <Route path = "/" exact component= {ListAlertComponent}></Route>
             <Route path = "/alerts" component= {ListAlertComponent}></Route> 
             <Route path = "/add-alert" component= {CreateAlertComponent}></Route>  

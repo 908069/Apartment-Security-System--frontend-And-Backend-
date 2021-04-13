@@ -26,18 +26,18 @@ class ListHelpComponent extends Component {
         this.props.history.push('/add-help');
     }
 
-    editHelp(id){
-        this.props.history.push(`/update-help/${id}`)
+    editHelp(helpId){
+        this.props.history.push(`/update-help/${helpId}`)
     }
 
-    deleteHelp(id){
-        HelpService.deleteHelp(id).then((res) => {
-            this.setState({domestichelp: this.state.domestichelp.filter( help => help.id !== id)});
+    deleteHelp(helpId){
+        HelpService.deleteHelp(helpId).then((res) => {
+            this.setState({domestichelp: this.state.domestichelp.filter( help => help.helpId !== helpId)});
         });
     }
 
-    viewHelp(id){
-        this.props.history.push(`/view-help/${id}`);
+    viewHelp(helpId){
+        this.props.history.push(`/view-help/${helpId}`);
     }
 
     render() { 
@@ -57,9 +57,6 @@ class ListHelpComponent extends Component {
                                 <th>Help Date</th>
                                 <th>Arrival Time</th>
                                 <th>Departure Time</th>
-                                
-                                
-                                
                                 <th>Actions</th>
                             </tr>
                         </thead>
@@ -77,14 +74,14 @@ class ListHelpComponent extends Component {
                                         <td>{help.departureTime}</td>
                                         
                                         <td>
-                                            <button onClick = {()=>this.editHelp(help.id)} className = "btn btn-info">Edit</button>
+                                            <button onClick = {()=>this.editHelp(help.helpId)} className = "btn btn-info">Edit</button>
                                         </td>
                                         <td>
-                                            <button  style = {{marginLeft: "10px"}} onClick = {()=>this.deleteHelp(help.id)} className = "btn btn-danger">Delete</button>
+                                            <button  style = {{marginLeft: "10px"}} onClick = {()=>this.deleteHelp(help.helpId)} className = "btn btn-danger">Delete</button>
                                         </td>
 
                                         <td>
-                                            <button  style = {{marginLeft: "10px"}} onClick = {()=>this.viewHelp(help.id)} className = "btn btn-info">View</button>
+                                            <button  style = {{marginLeft: "10px"}} onClick = {()=>this.viewHelp(help.helpId)} className = "btn btn-info">View</button>
                                         </td>
                                      </tr>  
                                 )
