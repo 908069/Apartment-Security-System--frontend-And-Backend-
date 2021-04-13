@@ -44,8 +44,8 @@ class CreateDeliveryComponent extends Component {
             status: "",
             isError:
             {
-                deliveryDate:""
-                
+                deliveryDate:"",
+                status: ""
             }
         }
         this.changeDeliveryDateHandler = this.changeDeliveryDateHandler.bind(this);
@@ -137,9 +137,9 @@ class CreateDeliveryComponent extends Component {
                                     <div className="form-group">
                                         <label>Status</label>
                                         <select name="status" id="status" onChange={this.changeStatusHandler} >
-    <option value="Delivered">Delivered</option>
-    <option value="Pending" selected>Pending</option>
-</select>  
+                                            <option value="Delivered">Delivered</option>
+                                            <option value="Pending" selected>Pending</option>
+                                            </select>  
                                        
                                     </div>
                                     <button className="btn btn-success" onClick={this.saveDelivery}>Save</button>

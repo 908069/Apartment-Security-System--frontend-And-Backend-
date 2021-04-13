@@ -34,7 +34,7 @@ class UpdateDeliveryComponent extends Component {
             status: this.state.status
         };
         console.log(JSON.stringify(delivery));
-        DeliveryService.updateDelivery(delivery,this.state.deliveryId).then((res) =>{
+        DeliveryService.updateDelivery(delivery).then((res) =>{
             this.props.history.push('/deliveries');
        });
     }  

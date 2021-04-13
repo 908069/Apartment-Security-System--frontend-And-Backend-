@@ -10,7 +10,6 @@ import UserRegistration from './Registration/UserRegistration';
 import Login from './LoginPage';
 import Home from './Home';
 import './App.css';
-import GetVehicle from './Component/Vehicle/GetVehicle';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -26,11 +25,19 @@ import ListDeliveryComponent from './Component/Delivery/ListDeliveryComponent';
 import CreateDeliveryComponent from './Component/Delivery/CreateDeliveryComponent';
 import UpdateDeliveryComponent from './Component/Delivery/UpdateDeliveryComponent';
 import ViewDeliveryComponent from './Component/Delivery/ViewDeliveryComponent';
+import ListVisitorComponent from './Component/Visitors/ListVisitorComponent';
+import CreateVisitorComponent from './Component/Visitors/CreateVisitorComponent';
+import UpdateVisitorComponent from './Component/Visitors/UpdateVisitorComponent';
+import ViewVisitorComponent from './Component/Visitors/ViewVisitorComponent';
+import ListVehicleComponent from './Component/Vehicle/ListVehicleComponents';
+import CreateVehicleComponent from './Component/Vehicle/CreateVehicleComponent';
+import UpdateVehicleComponent from './Component/Vehicle/UpdateVehicleComponent';
+import ViewVehicleComponent from './Component/Vehicle/ViewVehicleComponent';
 function App() {
   return (  
     <div className="App">
       
-    <HomeMenu/>
+    {/* <HomeMenu/>
     
       <Switch>
         
@@ -39,18 +46,39 @@ function App() {
         <Route path='/login' component={Login}/>
         <Route path='/addflatdetails' component={PostFlatdetails}/>
         <Route path='/addGuardShift' component={PostGuardShift}/>
-    </Switch>
+    </Switch> */}
        <Router>
         
         {/* <HeaderComponent/> */}
         <div className="container">
         
           <Switch>
-          {/* <Route path = "/" exact component= {ListDeliveryComponent}></Route>
+          {/* <Route path = "/" exact component= {ListAlertComponent}></Route>
+              <Route path = "/alerts" component= {ListAlertComponent}></Route> 
+              <Route path = "/add-alert" component= {CreateAlertComponent}></Route>  
+              <Route path = "/update-alert/:id" component= {UpdateAlertComponent}></Route>
+              <Route path = "/view-alert/:id" component= {ViewAlertComponent}></Route>
+              <Route path = "/visitors" component= {ListVisitorComponent}></Route> 
+              <Route path = "/add-visitor" component= {CreateVisitorComponent}></Route>  
+              <Route path = "/update-visitor/:id" component= {UpdateVisitorComponent}></Route>
+              <Route path = "/view-visitor/:id" component= {ViewVisitorComponent}></Route>
+              <Route path = "/vehicles" component= {ListVehicleComponent}></Route> 
+              <Route path = "/add-vehicle" component= {CreateVehicleComponent}></Route>  
+              <Route path = "/update-vehicle/:id" component= {UpdateVehicleComponent}></Route>
+              <Route path = "/view-vehicle/:id" component= {ViewVehicleComponent}></Route> */}
+
+
+
+
+
+
+
+
+          <Route path = "/" exact component= {ListDeliveryComponent}></Route>
           <Route path = "/deliveries" component= {ListDeliveryComponent}></Route> 
             <Route path = "/add-delivery" component= {CreateDeliveryComponent}></Route>  
             <Route path = "/update-delivery/:deliveryId" component= {UpdateDeliveryComponent}></Route>
-            <Route path = "/view-delivery/:deliveryId" component= {ViewDeliveryComponent}></Route> */}
+            <Route path = "/view-delivery/:deliveryId" component= {ViewDeliveryComponent}></Route>
            {/* <Route path = "/" exact component= {ListHelpComponent}></Route>
           <Route path = "/helps" component= {ListHelpComponent}></Route> 
             <Route path = "/add-help" component= {CreateHelpComponent}></Route>  

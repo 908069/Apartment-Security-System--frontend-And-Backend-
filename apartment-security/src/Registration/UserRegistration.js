@@ -41,17 +41,17 @@ import axios from 'axios'
         axios.get('http://localhost:8082/springfox/api/user/users')
         .then(response=>{
            if(response.status == 200){
-            const check2= response.data.filter(user=>user.userId===data.userId);
+           const check2= response.data.filter(user=>user.userId===data.userId);
            const check1= response.data.filter(user=>user.emailId===data.emailId);
            
-           console.log(check2)
+           
          // console.log(check1);
-          if(check1.length!=0||check2.length!=0){
+          if(check1.length!=0){
               setuserregistration({...userregistration,msg : 'Email is already exist'});
           }
-          else if(check2.length!=0){
-            setuserregistration({...userregistration,msg : ' Unique Key is already exist'});
-          }
+           else if( check2.length!=0){
+           setuserregistration({...userregistration,msg : ' Unique Key is already exist'});
+         }
           else{
               console.log(data)
             axios.post('http://localhost:8082/springfox/api/user/users',data)
