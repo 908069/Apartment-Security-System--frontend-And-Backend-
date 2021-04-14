@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import ReactDOM from 'react-dom'; 
-import { withRouter } from "react-router";
+import { withRouter,redirect ,Route} from "react-router";
 import axios from 'axios';
+import OwnerLoginMenu from "./Component/LoginOwner";
+import GuardLoginMenu from "./Component/GuardLoginMenu";
 
 class Login extends React.Component{
     constructor(props)
@@ -11,7 +13,8 @@ class Login extends React.Component{
             emailId:'',
             password:'',
             role:'',
-            msg:''
+            msg:'',
+            loggedIn:false
 
         };
         this.handleEmail=this.handleEmail.bind(this);
@@ -45,15 +48,14 @@ class Login extends React.Component{
         console.log(data);
         axios.get('http://localhost:8082/springfox/api/user/users')
       .then(response=>{
-        
-        
-        
          if(response.status == 200){
          const check= response.data.filter(user=>user.emailId===data.emailId);
         console.log(check);
         if(check[0].password===data.password && check[0].role===data.role)
         {
             this.setState({msg : 'Authentication Complete' });
+            this.setState({loggedIn:true})
+            
         }
         else{
             this.setState({msg : 'Invalid Password or Role'});
@@ -74,6 +76,7 @@ class Login extends React.Component{
    
     render(){
         const {history} = this.props
+        
         return(
             <div>
                 <h1>login</h1>
