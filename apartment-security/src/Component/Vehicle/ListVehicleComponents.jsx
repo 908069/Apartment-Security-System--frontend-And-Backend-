@@ -23,11 +23,11 @@ class ListVehicleComponent extends Component {
 
 
     addVehicle(){
-        this.props.history.push('/add-vehicle');
+        this.props.history.push('/./add-vehicle');
     }
 
     editVehicle(id){
-        this.props.history.push(`/update-vehicle/${id}`)
+        this.props.history.push(`/./update-vehicle/${id}`)
     }
 
     deleteVehicle(id){
@@ -37,7 +37,7 @@ class ListVehicleComponent extends Component {
     }
 
     viewVehicle(id){
-        this.props.history.push(`/view-vehicle/${id}`);
+        this.props.history.push(`/./view-vehicle/${id}`);
     }
 
     render() { 

@@ -55,6 +55,10 @@ class Login extends React.Component{
         {
             this.setState({msg : 'Authentication Complete' });
             this.setState({loggedIn:true})
+            if(data.role==='owner'){
+                this.props.history.push('/.')
+            }
+
             
         }
         else{

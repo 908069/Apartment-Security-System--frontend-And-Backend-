@@ -36,12 +36,12 @@ class UpdateVehicleComponent extends Component {
         };
         console.log(JSON.stringify(vehicle));
         VehicleService.updateVehicle(vehicle).then((res) =>{
-            this.props.history.push('/vehicles');
+            this.props.history.push('/./vehicles');
        });
     }  
     
     cancel(){
-        this.props.history.push('/vehicles');
+        this.props.history.push('/./vehicles');
     }
 
     changeVehicleNoHandler = (event) =>{

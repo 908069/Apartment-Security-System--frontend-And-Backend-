@@ -35,12 +35,12 @@ class UpdateAlertComponent extends Component {
         };
         console.log(JSON.stringify(alert));
         AlertService.updateAlert(alert).then((res) =>{
-            this.props.history.push('/alerts');
+            this.props.history.push('/./alerts');
        });
     }  
     
     cancel(){
-        this.props.history.push('/alerts');
+        this.props.history.push('/./alerts');
     }
 
     changeAlertMessageHandler = (event) =>{

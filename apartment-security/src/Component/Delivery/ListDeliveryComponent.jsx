@@ -23,11 +23,11 @@ class ListDeliveryComponent extends Component {
 
 
     addDelivery(){
-        this.props.history.push('/add-delivery');
+        this.props.history.push('/./add-delivery');
     }
 
     editDelivery(deliveryId){
-        this.props.history.push(`/update-delivery/${deliveryId}`)
+        this.props.history.push(`/./update-delivery/${deliveryId}`)
     }
 
     deleteDelivery(deliveryId){
@@ -37,7 +37,7 @@ class ListDeliveryComponent extends Component {
     }
 
     viewDelivery(deliveryId){
-        this.props.history.push(`/view-delivery/${deliveryId}`);
+        this.props.history.push(`/./view-delivery/${deliveryId}`);
     }
 
     render() { 

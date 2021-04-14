@@ -72,7 +72,7 @@ class CreateVehicleComponent extends Component {
             };
             console.log(JSON.stringify(vehicle));
             VehicleService.createVehicle(vehicle).then(res => {
-                this.props.history.push('/vehicles');
+                this.props.history.push('/./vehicles');
             })
         }
         else {
@@ -81,7 +81,7 @@ class CreateVehicleComponent extends Component {
     }
 
     cancel() {
-        this.props.history.push('/vehicles');
+        this.props.history.push('/./vehicles');
     }
 
     changeVehicleNoHandler = (event) => {

@@ -35,12 +35,12 @@ class UpdateDeliveryComponent extends Component {
         };
         console.log(JSON.stringify(delivery));
         DeliveryService.updateDelivery(delivery).then((res) =>{
-            this.props.history.push('/deliveries');
+            this.props.history.push('/./deliveries');
        });
     }  
     
     cancel(){
-        this.props.history.push('/deliveries');
+        this.props.history.push('/./deliveries');
     }
 
     changeDeliveryDateHandler= (event) =>{

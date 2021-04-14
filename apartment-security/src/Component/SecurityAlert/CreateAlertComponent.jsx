@@ -67,7 +67,7 @@ class CreateAlertComponent extends Component {
             };
             console.log(JSON.stringify(alert));
             AlertService.createAlert(alert).then(res => {
-                this.props.history.push('/alerts');
+                this.props.history.push('/./alerts');
             })
         }
         else {
@@ -76,7 +76,7 @@ class CreateAlertComponent extends Component {
     }
 
     cancel() {
-        this.props.history.push('/alerts');
+        this.props.history.push('/./alerts');
     }
 
     changeAlertMessageHandler = (event) => {

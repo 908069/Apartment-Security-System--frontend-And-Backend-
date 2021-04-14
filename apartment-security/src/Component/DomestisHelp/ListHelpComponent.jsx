@@ -23,11 +23,11 @@ class ListHelpComponent extends Component {
 
 
     addHelp(){
-        this.props.history.push('/add-help');
+        this.props.history.push('/./add-help');
     }
 
     editHelp(helpId){
-        this.props.history.push(`/update-help/${helpId}`)
+        this.props.history.push(`/./update-help/${helpId}`)
     }
 
     deleteHelp(helpId){
@@ -37,7 +37,7 @@ class ListHelpComponent extends Component {
     }
 
     viewHelp(helpId){
-        this.props.history.push(`/view-help/${helpId}`);
+        this.props.history.push(`/./view-help/${helpId}`);
     }
 
     render() { 

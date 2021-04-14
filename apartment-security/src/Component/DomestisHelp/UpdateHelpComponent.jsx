@@ -42,12 +42,12 @@ class UpdateHelpComponent extends Component {
         };
         console.log(JSON.stringify(domestichelp));
         HelpService.updateHelp(domestichelp).then((res) =>{
-            this.props.history.push('/helps');
+            this.props.history.push('/./helps');
        });
     }  
     
     cancel(){
-        this.props.history.push('/helps');
+        this.props.history.push('/./helps');
     }
 
     changearrivalTimeHandler = (event) =>{

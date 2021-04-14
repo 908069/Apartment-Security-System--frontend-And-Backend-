@@ -23,11 +23,11 @@ class ListAlertComponent extends Component {
 
 
     addAlert(){
-        this.props.history.push('/add-alert');
+        this.props.history.push('/./add-alert');
     }
 
     editAlert(id){
-        this.props.history.push(`/update-alert/${id}`)
+        this.props.history.push(`/./update-alert/${id}`)
     }
 
     deleteAlert(id){
@@ -37,7 +37,7 @@ class ListAlertComponent extends Component {
     }
 
     viewAlert(id){
-        this.props.history.push(`/view-alert/${id}`);
+        this.props.history.push(`/./view-alert/${id}`);
     }
 
     render() { 

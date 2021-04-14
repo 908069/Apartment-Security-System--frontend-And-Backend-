@@ -71,7 +71,7 @@ class CreateVisitorComponent extends Component {
             };
             console.log(JSON.stringify(visitor));
             VisitorService.createVisitor(visitor).then(res => {
-                this.props.history.push('/visitors');
+                this.props.history.push('/./visitors');
             })
         }
         else {
@@ -80,7 +80,7 @@ class CreateVisitorComponent extends Component {
     }
 
     cancel() {
-        this.props.history.push('/visitors');
+        this.props.history.push('/./visitors');
     }
 
     changeVisitorNameHandler = (event) => {

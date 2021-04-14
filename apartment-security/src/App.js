@@ -46,8 +46,8 @@ function App() {
       <Route exact path='/' component={Home}/>
         <Route exact path='/registration' component={UserRegistration}/>
         <Route path='/login' component={Login}/>
-        <Router path='/ownerlogin' component={OwnerLoginMenu}/>
-        <Router path='/guardlogin' component={GuardLoginMenu}/>
+        <Route path='/.' component={OwnerLoginMenu}/>
+        <Route path='/guardlogin' component={GuardLoginMenu}/>
         <Route path='/addflatdetails' component={PostFlatdetails}/>
         <Route path='/addGuardShift' component={PostGuardShift}/>
     </Switch>  
@@ -58,14 +58,14 @@ function App() {
         <div className="container">
         
           <Switch>
-              <Route path = "/visitors" component= {ListVisitorComponent}></Route> 
-              <Route path = "/add-visitor" component= {CreateVisitorComponent}></Route>  
-              <Route path = "/update-visitor/:id" component= {UpdateVisitorComponent}></Route>
-              <Route path = "/view-visitor/:id" component= {ViewVisitorComponent}></Route>
-              <Route path = "/vehicles" component= {ListVehicleComponent}></Route> 
-              <Route path = "/add-vehicle" component= {CreateVehicleComponent}></Route>  
-              <Route path = "/update-vehicle/:id" component= {UpdateVehicleComponent}></Route>
-              <Route path = "/view-vehicle/:id" component= {ViewVehicleComponent}></Route> 
+              <Route path = "/./visitors" component= {ListVisitorComponent}></Route> 
+              <Route path = "/./add-visitor" component= {CreateVisitorComponent}></Route>  
+              <Route path = "/./update-visitor/:id" component= {UpdateVisitorComponent}></Route>
+              <Route path = "/./view-visitor/:id" component= {ViewVisitorComponent}></Route>
+              <Route path = "/./vehicles" component= {ListVehicleComponent}></Route> 
+              <Route path = "/./add-vehicle" component= {CreateVehicleComponent}></Route>  
+              <Route path = "/./update-vehicle/:id" component= {UpdateVehicleComponent}></Route>
+              <Route path = "/./view-vehicle/:id" component= {ViewVehicleComponent}></Route> 
 
 
 
@@ -73,20 +73,20 @@ function App() {
 
 
           {/* <Route path = "/" exact component= {ListDeliveryComponent}></Route> */}
-          <Route path = "/deliveries" component= {ListDeliveryComponent}></Route> 
-            <Route path = "/add-delivery" component= {CreateDeliveryComponent}></Route>  
-            <Route path = "/update-delivery/:deliveryId" component= {UpdateDeliveryComponent}></Route>
-            <Route path = "/view-delivery/:deliveryId" component= {ViewDeliveryComponent}></Route> 
+          <Route path = "/./deliveries" component= {ListDeliveryComponent}></Route> 
+            <Route path = "/./add-delivery" component= {CreateDeliveryComponent}></Route>  
+            <Route path = "/./update-delivery/:deliveryId" component= {UpdateDeliveryComponent}></Route>
+            <Route path = "/./view-delivery/:deliveryId" component= {ViewDeliveryComponent}></Route> 
            {/* <Route path = "/" exact component= {ListHelpComponent}></Route> */}
-          <Route path = "/helps" component= {ListHelpComponent}></Route> 
-            <Route path = "/add-help" component= {CreateHelpComponent}></Route>  
-            <Route path = "/update-help/:helpId" component= {UpdateHelpComponent}></Route>
-            <Route path = "/view-help/:helpId" component= {ViewHelpComponent}></Route> 
+          <Route path = "/./helps" component= {ListHelpComponent}></Route> 
+            <Route path = "/./add-help" component= {CreateHelpComponent}></Route>  
+            <Route path = "/./update-help/:helpId" component= {UpdateHelpComponent}></Route>
+            <Route path = "/./view-help/:helpId" component= {ViewHelpComponent}></Route> 
             {/* <Route path = "/" exact component= {ListAlertComponent}></Route> */}
-            <Route path = "/alerts" component= {ListAlertComponent}></Route> 
-            <Route path = "/add-alert" component= {CreateAlertComponent}></Route>  
-            <Route path = "/update-alert/:id" component= {UpdateAlertComponent}></Route>
-            <Route path = "/view-alert/:id" component= {ViewAlertComponent}></Route>              
+            <Route path = "/./alerts" component= {ListAlertComponent}></Route> 
+            <Route path = "/./add-alert" component= {CreateAlertComponent}></Route>  
+            <Route path = "/./update-alert/:id" component= {UpdateAlertComponent}></Route>
+            <Route path = "/./view-alert/:id" component= {ViewAlertComponent}></Route>              
           </Switch> 
         </div>
         {/* <FooterComponent/> */}

@@ -66,7 +66,7 @@ class CreateHelpComponent extends Component {
             };
             console.log(JSON.stringify(domestichelp));
             HelpService.createHelp(domestichelp).then(res => {
-                this.props.history.push('/helps');
+                this.props.history.push('/./helps');
             })
         }
         else {
@@ -76,7 +76,7 @@ class CreateHelpComponent extends Component {
     }
 
     cancel() {
-        this.props.history.push('/domistichelps');
+        this.props.history.push('/./domistichelps');
     }
 
     changeArrivalTimeHandler = (event) => {

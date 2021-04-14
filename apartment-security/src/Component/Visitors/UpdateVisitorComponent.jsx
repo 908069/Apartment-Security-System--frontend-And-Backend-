@@ -38,12 +38,12 @@ class UpdateVisitorComponent extends Component {
         };
         console.log(JSON.stringify(visitor));
         VisitorService.updateVisitor(visitor).then((res) =>{
-            this.props.history.push('/visitors');
+            this.props.history.push('/./visitors');
        });
     }  
     
     cancel(){
-        this.props.history.push('/visitors');
+        this.props.history.push('/./visitors');
     }
 
     changeVisitorNameHandler = (event) =>{

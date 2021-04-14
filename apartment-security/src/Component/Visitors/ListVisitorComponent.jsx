@@ -23,11 +23,11 @@ class ListVisitorComponent extends Component {
 
 
     addVisitor(){
-        this.props.history.push('/add-visitor');
+        this.props.history.push('/./add-visitor');
     }
 
     editVisitor(id){
-        this.props.history.push(`/update-visitor/${id}`)
+        this.props.history.push(`/./update-visitor/${id}`)
     }
 
     deleteVisitor(id){
@@ -37,7 +37,7 @@ class ListVisitorComponent extends Component {
     }
 
     viewVisitor(id){
-        this.props.history.push(`/view-visitor/${id}`);
+        this.props.history.push(`/./view-visitor/${id}`);
     }
 
     render() { 
