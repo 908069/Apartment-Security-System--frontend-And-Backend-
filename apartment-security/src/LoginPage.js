@@ -79,11 +79,8 @@ class Login extends React.Component{
     
    
     render(){
-        const {history,name} = this.props
-        if(name){
-            this.props.history.push('/.')
-        }
-        
+        const {history,logout} = this.props
+        console.log(logout,"logout")
         return(
             <div>
                 <h1>login</h1>

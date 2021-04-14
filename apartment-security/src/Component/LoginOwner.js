@@ -1,28 +1,21 @@
-import React ,{useState}from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
-import {NavLink,Switch} from 'react-router-dom'
-import LoginPage from '../LoginPage'
+import {NavLink} from 'react-router-dom'
 
 function OwnerLoginMenu() {
-    const [logout, setlogout] = useState(true)
- const HandleLogout=()=>{
-    setlogout(false)
-}
-<LoginPage name={logout}/>
     return (
         <>
-        
             {/* <NavLink to="/"> Details </NavLink> */}
             <div>
-            <Switch>
+            
             <NavLink to="/./visitors"> Visitors</NavLink>
            <NavLink to="/./helps"> DomesticHelp </NavLink> 
            <NavLink to="/./alerts"> Security Alert </NavLink>
            <NavLink to="/./vehicles"> Vehicle </NavLink>
            <NavLink to="/./deliveries"> Delivery </NavLink>
-           </Switch>
+           <button onClick={()=>window.location = "/login"}>Logout</button>
            </div>
-           <button onClick={HandleLogout} > Logout</button>
+           
         </>
     )
 }
