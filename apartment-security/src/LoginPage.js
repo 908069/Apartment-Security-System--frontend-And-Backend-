@@ -79,7 +79,10 @@ class Login extends React.Component{
     
    
     render(){
-        const {history} = this.props
+        const {history,name} = this.props
+        if(name){
+            this.props.history.push('/.')
+        }
         
         return(
             <div>

@@ -76,7 +76,7 @@ class CreateHelpComponent extends Component {
     }
 
     cancel() {
-        this.props.history.push('/./domistichelps');
+        this.props.history.push('/./helps');
     }
 
     changeArrivalTimeHandler = (event) => {

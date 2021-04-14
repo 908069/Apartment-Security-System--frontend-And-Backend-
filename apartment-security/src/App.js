@@ -41,6 +41,7 @@ function App() {
       
     <HomeMenu/>
     
+    
       <Switch>
         
       <Route exact path='/' component={Home}/>
