@@ -41,7 +41,7 @@ import axios from 'axios'
         axios.get('http://localhost:8082/springfox/api/user/users')
         .then(response=>{
            if(response.status == 200){
-           const check2= response.data.filter(user=>user.userId===data.userId);
+           const check2= response.data.filter(user=>user.userId==data.userId);
            const check1= response.data.filter(user=>user.emailId===data.emailId);
            
            
@@ -155,7 +155,7 @@ import axios from 'axios'
                 </div>
             </form>
             
-            <h1>{userregistration.msg}</h1>
+            <h6>{userregistration.msg}</h6>
             </div>
             </div>
             

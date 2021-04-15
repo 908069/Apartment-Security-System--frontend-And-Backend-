@@ -21,18 +21,18 @@ export class HomeMenu extends Component {
             <div className="hhm">
                 <div >
             <div className="sm">
-                <h>SECURITY MANAGEMENT</h>
+                <h4>SECURITY MANAGEMENT</h4>
             </div>
-            <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div className="navbar navbar-expand-lg navbar-dark bg-dark">
         
-            <a class="navbar-brand" href="#Navbar">
-            <a class="navbar-brand" href="position: sticky">
-            <NavLink activeStyle to="/"> Home </NavLink>
+            <a className="navbar-brand" href="#Navbar">
+            <a className="navbar-brand" href="position: sticky">
+            <NavLink  to="/"> Home </NavLink>
           
             
-            <NavLink activeStyle to="/login"> Login</NavLink>
+            <NavLink  to="/login"> Login</NavLink>
             
-           <NavLink activStyle to="/registration"> Sign Up</NavLink> 
+           <NavLink  to="/registration"> Sign Up</NavLink> 
            </a>
            </a>
           

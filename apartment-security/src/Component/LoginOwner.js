@@ -8,9 +8,9 @@ function OwnerLoginMenu() {
             {/* <NavLink to="/"> Details </NavLink> */}
             <div>
             
-            <div class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="position: sticky">
-            <a class="navbar-brand" href="#Navbar">
+            <div className="navbar navbar-expand-lg navbar-light bg-light">
+            <a className="navbar-brand" href="position: sticky">
+            <a className="navbar-brand" href="#Navbar">
             <NavLink to="/./visitors"> Visitors</NavLink>
            <NavLink to="/./helps"> DomesticHelp </NavLink> 
            <NavLink to="/./alerts"> Security Alert </NavLink>
@@ -21,9 +21,7 @@ function OwnerLoginMenu() {
            </a>
            </div>
            <button onClick={()=>window.location = "/login"}>Logout</button>
-           {/* <div>
-           <img src={home} alt="" className="hhh"/>
-           </div> */}
+           
            </div>
            
         </>
