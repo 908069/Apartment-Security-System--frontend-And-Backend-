@@ -24,5 +24,15 @@ test("mocking get end point", () => {
     expect(axios.post).toHaveBeenCalled()
     expect(axios.post).toHaveBeenCalledWith('http://localhost:8082/springfox/api/owner/visitor',undefined)
 })
-
+test("mocking post end point", () => {
+    
+    const mockedResponse={data:{visitor_name:'Mahesh',flat_no:303}};
+    axios.post.mockResolvedValue(mockedResponse)
+    
+   
+    VisitorService.createVisitor();
+ 
+    expect(axios.post).toHaveBeenCalled()
+    expect(axios.post).toHaveBeenCalledWith('http://localhost:8082/springfox/api/owner/visitor',undefined)
+})
 })

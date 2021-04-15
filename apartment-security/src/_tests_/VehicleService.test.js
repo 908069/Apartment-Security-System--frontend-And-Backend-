@@ -13,6 +13,16 @@ describe("testing Delivery service", () => {
     expect(axios.get).toHaveBeenCalled()
     expect(axios.get).toHaveBeenCalledWith('http://localhost:8082/springfox/api/owner/vehicle')
 })
-
+test("mocking post end point", () => {
+    
+    const mockedResponse={data:{ vehicle_no:'AP234869',basement_level:3,parking_no:304,vehicle_type:'sedan'}};
+    axios.post.mockResolvedValue(mockedResponse)
+    
+   
+    VehicleService.createVehicle();
+ 
+    expect(axios.post).toHaveBeenCalled()
+    expect(axios.post).toHaveBeenCalledWith('http://localhost:8082/springfox/api/owner/vehicle',undefined)
+})
 
 })

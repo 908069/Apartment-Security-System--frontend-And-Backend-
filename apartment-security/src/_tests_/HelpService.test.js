@@ -13,5 +13,15 @@ describe("testing Help service", () => {
     expect(axios.get).toHaveBeenCalled()
     expect(axios.get).toHaveBeenCalledWith('http://localhost:8082/springfox/api/owner/domesticHelp')
 })
-
+test("mocking post end point", () => {
+    
+    const mockedResponse={data:{person_name:'Mahesh'}};
+    axios.post.mockResolvedValue(mockedResponse)
+    
+   
+    HelpService.createHelp();
+ 
+    expect(axios.post).toHaveBeenCalled()
+    expect(axios.post).toHaveBeenCalledWith('http://localhost:8082/springfox/api/owner/domesticHelp',undefined)
+})
 })

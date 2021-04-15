@@ -13,5 +13,15 @@ describe("testing alert service", () => {
     expect(axios.get).toHaveBeenCalled()
     expect(axios.get).toHaveBeenCalledWith('http://localhost:8082/springfox/api/owner/alert')
 })
-
+test("mocking post end point", () => {
+    
+    const mockedResponse={data:{alert_message:'Visitor arrived'}};
+    axios.post.mockResolvedValue(mockedResponse)
+    
+   
+    AlertService.createAlert();
+ 
+    expect(axios.post).toHaveBeenCalled()
+    expect(axios.post).toHaveBeenCalledWith('http://localhost:8082/springfox/api/owner/alert',undefined)
+})
 })
