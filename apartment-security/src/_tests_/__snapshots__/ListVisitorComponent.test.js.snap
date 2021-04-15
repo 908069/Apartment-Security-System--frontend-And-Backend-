@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <h2
+    className="text-center"
+  >
+    Visitors List
+  </h2>
+  <div
+    className="row"
+  >
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+    >
+      Add Visitor
+    </button>
+  </div>
+  <div
+    className="row"
+  >
+    <table
+      className="table table-striped table-bordered"
+    >
+      <thead>
+        <tr>
+          <th>
+            Visitor Id
+          </th>
+          <th>
+            Visitor Name
+          </th>
+          <th>
+            Flat Number
+          </th>
+          <th>
+            Arrival Date
+          </th>
+          <th>
+            Departure Date
+          </th>
+          <th>
+            Actions
+          </th>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+  </div>
+</div>
+`;

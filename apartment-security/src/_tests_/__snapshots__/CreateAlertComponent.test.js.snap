@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="card col-md-6 offset-md-3 offset-md-3"
+      >
+        <h3
+          className="text-center"
+        >
+          Add Security Alert
+        </h3>
+        <div
+          className="card-body"
+        >
+          <form>
+            <div
+              className="form-group"
+            >
+              <label>
+                Enter Alert Message
+              </label>
+              <input
+                className="form-control"
+                name="alertMessage"
+                onChange={[Function]}
+                placeholder="Alert Message"
+                value=""
+              />
+            </div>
+            <div
+              className="form-group"
+            >
+              <label>
+                Enter Alert Date(yyyy-mm-dd)
+              </label>
+              <input
+                className="form-control"
+                name="alertDate"
+                onChange={[Function]}
+                placeholder="Alert Date"
+                value=""
+              />
+            </div>
+            <div
+              className="form-group"
+            >
+              <label>
+                Enter Alert Type
+              </label>
+              <input
+                className="form-control"
+                name="alertType"
+                onChange={[Function]}
+                placeholder="Alert Type"
+                value=""
+              />
+            </div>
+            <button
+              className="btn btn-success"
+              onClick={[Function]}
+            >
+              Save
+            </button>
+            <button
+              className="btn btn-danger"
+              onClick={[Function]}
+              style={
+                Object {
+                  "marginLeft": "10px",
+                }
+              }
+            >
+              Cancel
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

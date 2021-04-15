@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  class="fs"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="card col-md-6 offset-md-3 offset-md-3"
+    >
+      <h3>
+         Flat Details
+      </h3>
+      <form
+        action=""
+        onSubmit={[Function]}
+      >
+        <div
+          className="form-group"
+        >
+          <label
+            htmlFor="flatNo"
+          >
+            Flat Number
+          </label>
+          <br />
+          <input
+            autoComplete="off"
+            id="flatNo"
+            name="flatNo"
+            onChange={[Function]}
+            required={true}
+            type="text"
+            value=""
+          />
+          <br />
+          <label
+            htmlFor="floorNo"
+          >
+            Floor Number
+          </label>
+          <br />
+          <input
+            autoComplete="off"
+            id="floorNo"
+            name="floorNo"
+            onChange={[Function]}
+            required={true}
+            type="text"
+            value=""
+          />
+          <br />
+          <button
+            class="btn btn-outline-success my-2 my-sm-0"
+            type="submit"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+      <div
+        id="showSuccessResponseflatdetails"
+      />
+    </div>
+  </div>
+</div>
+`;

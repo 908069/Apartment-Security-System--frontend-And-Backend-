@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="card col-md-6 offset-md-3 offset-md-3"
+      >
+        <h3
+          className="text-center"
+        >
+          Add Visitor
+        </h3>
+        <div
+          className="card-body"
+        >
+          <form>
+            <div
+              className="form-group"
+            >
+              <label>
+                Enter Visitor Name
+              </label>
+              <input
+                className="form-control"
+                name="visitorName"
+                onChange={[Function]}
+                placeholder="Visitor Name"
+                value=""
+              />
+            </div>
+            <div
+              className="form-group"
+            >
+              <label>
+                Enter Flat Number
+              </label>
+              <input
+                className="form-control"
+                name="flatNo"
+                onChange={[Function]}
+                placeholder="Flat No"
+                value=""
+              />
+            </div>
+            <div
+              className="form-group"
+            >
+              <label>
+                Enter Arrival Date(yyyy-mm-dd)
+              </label>
+              <input
+                className="form-control"
+                name="arrivalDate"
+                onChange={[Function]}
+                placeholder="Arrival Date"
+                value=""
+              />
+            </div>
+            <div
+              className="form-group"
+            >
+              <label>
+                Enter Departure Date(yyyy-mm-dd)
+              </label>
+              <input
+                className="form-control"
+                name="departureDate"
+                onChange={[Function]}
+                placeholder="Departure Date"
+                value=""
+              />
+            </div>
+            <button
+              className="btn btn-success"
+              onClick={[Function]}
+            >
+              Save
+            </button>
+            <button
+              className="btn btn-danger"
+              onClick={[Function]}
+              style={
+                Object {
+                  "marginLeft": "10px",
+                }
+              }
+            >
+              Cancel
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

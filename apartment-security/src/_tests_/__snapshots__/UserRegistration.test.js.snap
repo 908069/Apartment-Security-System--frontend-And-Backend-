@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="container"
+  >
+    <div
+      className="card col-md-6 offset-md-3 offset-md-3"
+    >
+      <h3>
+        Registration
+      </h3>
+      <form
+        action=""
+        onSubmit={[Function]}
+      >
+        <div
+          className="form-group"
+        >
+          <label
+            htmlFor="username"
+          >
+            Name
+          </label>
+          <br />
+          <input
+            autoComplete="off"
+            id="username"
+            name="username"
+            onChange={[Function]}
+            required={true}
+            type="text"
+            value=""
+          />
+          <br />
+          <label
+            htmlFor="password"
+          >
+             Password
+          </label>
+          <br />
+          <input
+            autoComplete="off"
+            id="password"
+            name="password"
+            onChange={[Function]}
+            required={true}
+            type="password"
+            value=""
+          />
+          <br />
+          <label
+            htmlFor="mobilenumber"
+          >
+             Mobile Number
+          </label>
+          <br />
+          <input
+            autoComplete="off"
+            id="mobilenumber"
+            name="mobilenumber"
+            onChange={[Function]}
+            pattern="[0-9]{10}"
+            required={true}
+            type="tel"
+            value=""
+          />
+          <br />
+          <label
+            htmlFor="uniqueKey"
+          >
+             Unique Key
+          </label>
+          <br />
+          <input
+            autoComplete="off"
+            id="uniqueKey"
+            name="uniqueKey"
+            onChange={[Function]}
+            pattern="[0-9]{5}"
+            required={true}
+            type="tel"
+            value=""
+          />
+          <br />
+          <label
+            htmlFor="email"
+          >
+            email
+          </label>
+          <br />
+          <input
+            autoComplete="off"
+            id="email"
+            name="email"
+            onChange={[Function]}
+            required={true}
+            type="email"
+            value=""
+          />
+          <br />
+          <br />
+          <label>
+             Owner:
+          </label>
+          <input
+            name="role"
+            onChange={[Function]}
+            required={true}
+            type="radio"
+            value="owner"
+          />
+          <label>
+             Guard:
+          </label>
+          <input
+            name="role"
+            onChange={[Function]}
+            type="radio"
+            value="guard"
+          />
+          <br />
+          <br />
+          <button
+            class="btn btn-outline-success my-2 my-sm-0"
+            type="submit"
+          >
+             Next
+          </button>
+        </div>
+      </form>
+      <h6>
+        
+      </h6>
+    </div>
+  </div>
+  <div
+    id="showSuccessResponse"
+  />
+</div>
+`;

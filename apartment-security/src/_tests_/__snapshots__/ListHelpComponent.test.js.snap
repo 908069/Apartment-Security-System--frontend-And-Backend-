@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <h2
+    className="text-center"
+  >
+    Domestic Help List
+  </h2>
+  <div
+    className="row"
+  >
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+    >
+      Add Domestic Help
+    </button>
+  </div>
+  <div
+    className="row"
+  >
+    <table
+      className="table table-striped table-bordered"
+    >
+      <thead>
+        <tr>
+          <th>
+            Help Id
+          </th>
+          <th>
+            Person Name
+          </th>
+          <th>
+            Help Type
+          </th>
+          <th>
+            Help Date
+          </th>
+          <th>
+            Arrival Time
+          </th>
+          <th>
+            Departure Time
+          </th>
+          <th>
+            Actions
+          </th>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+  </div>
+</div>
+`;

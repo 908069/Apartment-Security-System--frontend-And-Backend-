@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="card col-md-6 offset-md-3 offset-md-3"
+      >
+        <h3
+          className="text-center"
+        >
+          Add Help
+        </h3>
+        <div
+          className="card-body"
+        >
+          <form>
+            <div
+              className="form-group"
+            >
+              <label>
+                Enter Person Name
+              </label>
+              <input
+                name="personName"
+                onChange={[Function]}
+                placeholder="Person Name"
+                value=""
+              />
+            </div>
+            <div
+              className="form-group"
+            >
+              <label>
+                Enter Help Date(yyyy-mm-dd)
+              </label>
+              <input
+                className="form-control"
+                name="helpDate"
+                onChange={[Function]}
+                placeholder="Help Date"
+                value=""
+              />
+            </div>
+            <div
+              className="form-group"
+            >
+              <label>
+                Enter Help Type
+              </label>
+              <input
+                name="helpType"
+                onChange={[Function]}
+                placeholder="Help Type"
+                value=""
+              />
+            </div>
+            <div
+              className="form-group"
+            >
+              <label>
+                Enter Arrival Time
+              </label>
+              <input
+                name="arrivalTime"
+                onChange={[Function]}
+                placeholder="Arrival Time"
+                value=""
+              />
+            </div>
+            <div
+              className="form-group"
+            >
+              <label>
+                Enter Departure Time
+              </label>
+              <input
+                name="departureTime"
+                onChange={[Function]}
+                placeholder="Departure Time"
+                value=""
+              />
+            </div>
+            <button
+              className="btn btn-success"
+              onClick={[Function]}
+            >
+              Save
+            </button>
+            <button
+              className="btn btn-danger"
+              onClick={[Function]}
+              style={
+                Object {
+                  "marginLeft": "10px",
+                }
+              }
+            >
+              Cancel
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

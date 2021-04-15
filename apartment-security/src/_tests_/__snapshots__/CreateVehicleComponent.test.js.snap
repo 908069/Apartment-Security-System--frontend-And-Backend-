@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="card col-md-6 offset-md-3 offset-md-3"
+      >
+        <h3
+          className="text-center"
+        >
+          Add Vehicle
+        </h3>
+        <div
+          className="card-body"
+        >
+          <form>
+            <div
+              className="form-group"
+            >
+              <label>
+                Enter Vehicle Number (AA 00 AA 0000)
+              </label>
+              <input
+                className="form-control"
+                name="vehicleNo"
+                onChange={[Function]}
+                placeholder="Vehicle Number"
+                value=""
+              />
+            </div>
+            <div
+              className="form-group"
+            >
+              <label>
+                Enter Parking Number
+              </label>
+              <input
+                className="form-control"
+                name="parkingNo"
+                onChange={[Function]}
+                placeholder="Parking No"
+                value=""
+              />
+            </div>
+            <div
+              className="form-group"
+            >
+              <label>
+                Enter Basement Level
+              </label>
+              <input
+                className="form-control"
+                name="basementLevel"
+                onChange={[Function]}
+                placeholder="Basement Level"
+                value=""
+              />
+            </div>
+            <div
+              className="form-group"
+            >
+              <label>
+                Enter Vehicle Type
+              </label>
+              <input
+                className="form-control"
+                name="vehicleType"
+                onChange={[Function]}
+                placeholder="vehicle Type"
+                value=""
+              />
+            </div>
+            <button
+              className="btn btn-success"
+              onClick={[Function]}
+            >
+              Save
+            </button>
+            <button
+              className="btn btn-danger"
+              onClick={[Function]}
+              style={
+                Object {
+                  "marginLeft": "10px",
+                }
+              }
+            >
+              Cancel
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
