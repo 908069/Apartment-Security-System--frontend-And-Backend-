@@ -33,11 +33,15 @@ function PostGuardShift(props) {
        })
     }
     return (
-        <div>
+        <div class = "gh">
+            <div className="container">
+                    
+                    <div className="card col-md-6 offset-md-3 offset-md-3">
             <h3>Guard Shift Details</h3>
              <form action ="" onSubmit={handleSubmit}>
+             <div className="form-group">
             <label htmlFor="guardDate" 
-                    >Guard Joining Date</label>
+                    >Guard Joining Date(yyyy-mm-dd)</label>
                     <br></br>
                     <input type="text" autoComplete="off" onChange={handleGuardShift}
                      value={guardShiftDetails.guardDate} 
@@ -50,9 +54,11 @@ function PostGuardShift(props) {
                      value={guardShiftDetails.guardShift} 
                      name="guardShift" id="guardShift" required/>
                     <br></br>
-                    <button type='submit'>Submit</button>
+                    <button class="btn btn-outline-success my-2 my-sm-0" type='submit'>Submit</button>
+                    </div>
                 </form>
                 <div id="showSuccessResponseGuardShiftDetails"></div>
+                </div></div>
         </div>
     )
 }

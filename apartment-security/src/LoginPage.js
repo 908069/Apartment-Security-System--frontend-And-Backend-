@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import ReactDOM from 'react-dom'; 
 import { withRouter,redirect ,Route} from "react-router";
 import axios from 'axios';
-import OwnerLoginMenu from "./Component/LoginOwner";
-import GuardLoginMenu from "./Component/GuardLoginMenu";
+import {MDBContainer,MDBRow,MDBCol,MDBBtn,MDBCard,MDBCardBody,MDBIcon} from 'mdbreact'
 
 class Login extends React.Component{
     constructor(props)
@@ -83,19 +82,32 @@ class Login extends React.Component{
         console.log(logout,"logout")
         return(
             <div>
-                <h1>login</h1>
+                <div className="container">
+                    
+                    <div className="card col-md-6 offset-md-3 offset-md-3">
+                  <MDBContainer>
+      
+        
+          
+            
+                    
+                
                 <form action ="" onSubmit={this.handleSubmit}>
-
+            
+                <p className="h4 text-center py-4">Login</p>
                 <div>
-                    <label>Email</label>
+                    <label htmlFor="defaultFormCardNameEx" className="grey-text font-weight-light">Email</label>
                     <br></br>
-                    <input type="email" value={this.state.emailId} onChange={this.handleEmail} />
+                    <input  id="defaultFormCardNameEx"
+                  className="form-control" type="email" value={this.state.emailId} onChange={this.handleEmail} />
                 </div>
 
                 <div>
-                    <label>Password</label>
+                    <label htmlFor="defaultFormCardEmailEx"
+                  className="grey-text font-weight-light">Password</label>
                     <br></br>
-                    <input type="password" value={this.state.password} onChange={this.handlePassword}/>
+                    <input type="password"   id="defaultFormCardEmailEx"
+                  className="form-control" value={this.state.password} onChange={this.handlePassword}/>
                 </div>
                 <div >
                <input type="radio" id="Guard" name="Role" value="guard" onClick={this.handleRole}></input>
@@ -105,12 +117,18 @@ class Login extends React.Component{
                <label htmlFor="Owner">Owner</label>
                 </div>
 
-                <button type="submit" value="Submit">Submit</button>
-                <button type="submit" onClick={()=>history.push('/registration')}>New User Signup</button>
+                <button type="submit" class="btn btn-outline-success my-2 my-sm-0" value="Submit">Submit</button>
+                <button type="submit"  class="btn btn-outline-success my-2 my-sm-0" onClick={()=>history.push('/registration')}>New User Signup</button>
                 <br></br>
                 <h6>{this.state.msg}</h6>
             </form>
-            
+          
+          
+      
+      
+    </MDBContainer>
+    </div>
+           </div>
             </div>
             
         );

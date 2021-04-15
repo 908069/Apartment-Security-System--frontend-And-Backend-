@@ -66,7 +66,7 @@ class ListHelpComponent extends Component {
                                 this.state.domestichelp.map(
                                     help => 
                                     <tr key= {help.id}>
-                                        <td>{help.id}</td>
+                                        <td>{help.helpId}</td>
                                         <td>{help.personName}</td>
                                         <td>{help.helpType}</td>
                                         <td>{new Date(help.helpDate).toDateString()}</td>

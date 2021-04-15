@@ -18,13 +18,29 @@ export class HomeMenu extends Component {
     
     render() {
         return (
-            <>
-            <NavLink to="/"> Home </NavLink>
-            <NavLink to="/login"> Login</NavLink>
-           <NavLink to="/registration"> Sign Up</NavLink> 
+            <div className="hhm">
+                <div >
+            <div className="sm">
+                <h>SECURITY MANAGEMENT</h>
+            </div>
+            <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+        
+            <a class="navbar-brand" href="#Navbar">
+            <a class="navbar-brand" href="position: sticky">
+            <NavLink activeStyle to="/"> Home </NavLink>
+          
+            
+            <NavLink activeStyle to="/login"> Login</NavLink>
+            
+           <NavLink activStyle to="/registration"> Sign Up</NavLink> 
+           </a>
+           </a>
+          
+           </div>
+           </div>
+           </div>
            
-           
-        </>
+       
         )
     }
 }

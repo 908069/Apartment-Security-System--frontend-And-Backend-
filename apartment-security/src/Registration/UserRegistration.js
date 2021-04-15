@@ -99,20 +99,29 @@ import axios from 'axios'
     }
     return (
         <div>
-            <h1>Registration</h1>
+            <div className="container">
+                    
+                        <div className="card col-md-6 offset-md-3 offset-md-3">
+                        <h3>Registration</h3>
+                            
+            
+            
             <form action ="" onSubmit={handleSubmit}>
+            <div className="form-group">
                 <label htmlFor="username" 
                 >Name</label>
                 <br></br>
                 <input type="text" autoComplete="off" onChange={handleInput}
                  value={userregistration.username} name="username" id="username" required/>
+                
                 <br></br>
+                
                 <label htmlFor="password" 
                 > Password</label>
                 <br></br>
                 <input type="password" autoComplete="off" onChange={handleInput}
                  value ={userregistration.password} name="password" id="password" required/>
-                <br></br>
+               <br></br>
                 <label htmlFor="mobilenumber" 
                 > Mobile Number</label>
                 <br></br>
@@ -126,7 +135,7 @@ import axios from 'axios'
                 <input type="tel" autoComplete="off" onChange={handleInput} 
                 value ={userregistration.uniqueKey} name="uniqueKey" id="uniqueKey" 
                 pattern="[0-9]{5}" required/>
-                <br></br><br></br>
+                <br></br>
                 <label htmlFor="email" 
                 >email</label>
                 <br></br>
@@ -142,10 +151,17 @@ import axios from 'axios'
                 <br></br>
                 <br></br>
                 
-                <button type="submit" > Next</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" > Next</button>
+                </div>
             </form>
+            
             <h1>{userregistration.msg}</h1>
+            </div>
+            </div>
+            
+            
 <div id="showSuccessResponse"></div>
         </div>
+
     )}
 export default UserRegistration

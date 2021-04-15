@@ -5,8 +5,30 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
+.hh{
+  height: 600px;
+      width: 1080px;
+}
+.hhh{
+  height: 500px;
+  width: 1000px;
+}
+.fs{
+  font-size : 20px;
+  font-family: "Quicksand", sans-serif;
+  font-style : normal;
+  color : Black;
 
+}
+.fs{
+  font-size : 20px;
+  font-family: "Quicksand", sans-serif;
+  font-style : normal;
+  color : Black;
+
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

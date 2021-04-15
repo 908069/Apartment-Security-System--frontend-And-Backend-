@@ -1,10 +1,12 @@
 import React from 'react'
-
+import home from './Component/HomeImage.png';
 function Home() {
     return (
-        <div>
-            <h1>Welcome to Home Page</h1>
-        </div>
+        <div >
+        <div >
+        <img src={home} alt="" className="hh"/>
+</div>
+</div>
     )
 }
 

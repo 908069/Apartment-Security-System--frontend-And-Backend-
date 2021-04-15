@@ -32,9 +32,15 @@ function PostFlatdetails(props) {
        })
     }
     return (
-        <div>
+        
+        <div class ="fs">
+             <div className="container">
+                    
+                    <div className="card col-md-6 offset-md-3 offset-md-3">
             <h3> Flat Details</h3>
+
             <form action ="" onSubmit={handleSubmitd} >
+            <div className="form-group">
                      <label htmlFor="flatNo" 
                     >Flat Number</label>
                     <br></br>
@@ -49,10 +55,15 @@ function PostFlatdetails(props) {
                     value={flatDetails.floorNo} 
                     name="floorNo" id="floorNo" required/>
                     <br></br>
-                    <button type='submit'>Submit</button>
+                    <button class="btn btn-outline-success my-2 my-sm-0" type='submit'>Submit</button>
+                    </div>
                 </form>
+                
                 <div id="showSuccessResponseflatdetails"></div>
+                </div>
+                </div>
         </div>
+    
     )
 }
 
