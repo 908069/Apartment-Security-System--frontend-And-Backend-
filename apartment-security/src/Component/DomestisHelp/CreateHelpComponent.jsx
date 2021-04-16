@@ -7,23 +7,23 @@ const formValid = ({ isError, ...rest }) => {
     let isValid2 = false;
 
 
-    var temp1 = 0;
+  
     Object.values(rest).forEach(val => {
         if (val.length === 0) {
             isValid1 = false
         } else {
             isValid1 = true
-            temp1++;
+           
         }
     });
 
-    var temp2 = 0;
+  
     Object.values(isError).forEach(val => {
         if (val.length > 0) {
             isValid2 = false
         } else {
             isValid2 = true
-            temp2++;
+            
         }
     });
     if (isValid1 && isValid2 ) {
@@ -135,7 +135,7 @@ class CreateHelpComponent extends Component {
                                            
                                             value={this.state.personName}
 
-                                            onChange={this.changepersonNameHandler} />
+                                            onChange={this.changepersonNameHandler} required />
                                     </div>
                                     <div className="form-group">
                                         <label>Enter Help Date(yyyy-mm-dd)</label>

@@ -56,6 +56,10 @@ class Login extends React.Component{
             this.setState({loggedIn:true})
             if(data.role==='owner'){
                 this.props.history.push('/.')
+                
+            }
+            else{
+                this.props.history.push('/.')
             }
 
             
@@ -78,8 +82,8 @@ class Login extends React.Component{
     
    
     render(){
-        const {history,logout} = this.props
-        console.log(logout,"logout")
+        const {history} = this.props
+        
         return(
             <div>
                 <div className="container">

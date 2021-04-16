@@ -30,6 +30,7 @@ exports[`renders correctly 1`] = `
                 name="personName"
                 onChange={[Function]}
                 placeholder="Person Name"
+                required={true}
                 value=""
               />
             </div>
